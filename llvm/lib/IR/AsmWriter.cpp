@@ -2699,7 +2699,8 @@ void AssemblyWriter::printModule(const Module *M) {
       // require a comment char before it).
       M->getModuleIdentifier().find('\n') == std::string::npos)
     Out << "; ModuleID = '" << M->getModuleIdentifier() << "'\n";
-
+    Out<<"\n<=========Shruti===========>\n";
+  
   if (!M->getSourceFileName().empty()) {
     Out << "source_filename = \"";
     printEscapedString(M->getSourceFileName(), Out);
